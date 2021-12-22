@@ -1,0 +1,142 @@
+:root{
+    --dark-primary-color   : #00796B; 
+    --default-primary-color: #009688; 
+    --light-primary-color  : #B2DFDB; 
+    --text-primary-color   : #FFFFFF; 
+    --accent-color         : #CDDC39;
+    --primary-text-color   : #212121; 
+    --secondary-text-color : #757575; 
+    --divider-color        : #BDBDBD;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ************************* Pagina Inicio *********************** */
+body{
+    background-color: var(--default-primary-color);
+}
+
+.aviso{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aviso__texto{
+    background-color: var(--divider-color);
+    color: var(--dark-primary-color);
+    width: 60%;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    position: absolute;
+    border: 3px solid #a00;
+}
+
+.aviso__x{
+    background-color: #FF6347;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: -15px;
+    right: -15px;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    color: #fff;
+    border: 3px solid #a00;
+    cursor: pointer;
+}
+
+.container{
+    width: 50vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container__title{
+    color: var(--text-primary-color);
+    text-align: center;
+    font-size: 5rem;
+}
+
+.container__controls{
+    min-width: 50%;
+    border: 0.1rem solid var(--dark-primary-color);
+    box-shadow: 0 0 1.5rem .5rem rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    border-radius: 0.6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.controls__btnJugar{
+    background-color: var(--accent-color);
+    color: var(--primary-text-color);
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: .5em 1em;
+    border-radius: .2em;
+    text-decoration: none;
+    box-shadow: 0.1em 0.1em 0.4em #444;
+    transition: all 100ms;
+    margin-bottom: .5em;
+}
+
+.controls__btnJugar:hover{
+    transform: scale(0.97);
+    box-shadow: 0 0 0 #000;
+    cursor: pointer;
+}
+
+.controls__checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    color: var(--text-primary-color); 
+}
+
+input[type="checkbox"]{
+    margin: 0.6em;
+}
+
+.hidden{
+    display: none;
+}
+
+
+/* +++++++++ Responsive+++++++++++ */
+
+@media screen and (max-width: 640px) {
+    .aviso__texto{
+        font-size: 1.5rem;
+    }
+
+    .container__title{
+        font-size: 3rem;
+    }
+}

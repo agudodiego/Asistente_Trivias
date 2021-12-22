@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="juego.css">
+    <title>Juego</title>
+</head>
+<body>
+    <header class="contenedor">
+        
+        <div>
+            <h3 class="contenedor__categoria">Categoria:</h3>
+            <h2 class="contenedor__pregunta">Aca va la pregunta</h2>
+            <h4 class="contenedor__hint hidden">EN ESTE MODO DE JUEGO, si la pregunta contiene opciones puede pasar a la siguiente o intentar resolverla</h4>
+        </div>
+
+        <div class="contenedor__listado-opciones">
+
+            <div class="contenedor__opcion">
+                <p class="opcion opcion--unica">A</p>
+                <p class="opcion-texto">¿ ?</p>
+            </div>
+
+            <div class="contenedor__opcion">
+                <p class="opcion">B</p>
+                <p class="opcion-texto">¿ ?</p>
+            </div>
+
+            <div class="contenedor__opcion">
+                <p class="opcion">C</p>
+                <p class="opcion-texto">¿ ?</p>
+            </div>
+
+            <div class="contenedor__opcion">
+                <p class="opcion">D</p>
+                <p class="opcion-texto">¿ ?</p>
+            </div> 
+        </div>
+
+        <div class="contenedor__botones">
+            <a href="index.html" class="contenedor__btn">Inicio</a>
+            <div  id="siguiente" class="contenedor__btn">Siguiente</div>
+        </div>
+    </header>
+
+
+
+    <script src="juego.js"></script>
+</body>
+</html>
