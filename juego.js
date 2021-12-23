@@ -13,8 +13,9 @@ const $unicaOpcion = document.querySelector(".opcion.opcion--unica");
 // getElementsByClassName me devuelve un html collection con TODOS los 
 // elementos que compartan la clase en cuestion.
 // Para poder usar esa collection debo transformarla en un array con Array.from()
-console.log(mostarOpciones);
-console.log(mostarRtaOk);
+
+// console.log(mostarOpciones);
+// console.log(mostarRtaOk);
 
 // +++++++++++++++++++++++ Peticion +++++++++++++++++++++++++
 // let arrayDePreguntas = [];
@@ -62,7 +63,7 @@ function prepararPregunta (arrayDePreguntas){
     preguntaActual = arrayDePreguntas[indiceRandom];
     // elimino del array la pregunta seleccionada para que no salga repetida
     arrayDePreguntas.splice(indiceRandom, 1);
-    console.log(preguntaActual)
+    // console.log(preguntaActual)
     // console.log(arrayDePreguntas)
 
     // a continuacion lo que hago es generar una array con las 3 respuestas incorrectas    
