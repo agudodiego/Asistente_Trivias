@@ -1,7 +1,7 @@
 
 const mostarOpciones = localStorage.getItem("checkbox1");
 const mostarRtaOk = localStorage.getItem("checkbox2");
-// localStorage.clear();
+localStorage.clear();
 
 const $categoria = document.querySelector(".contenedor__categoria");
 const $pregunta = document.querySelector(".contenedor__pregunta");
